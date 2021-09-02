@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d779ad5f31.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
+    <nav class="top-nav">
     <ul>
     <li> <a href="#section1">Home</a>           </li>
     <li> <a href="#section2">My Projects</a>    </li>
@@ -17,11 +18,15 @@
 </ul>
 </nav>
 <div id="section1">
-   
-    <h1>Hi,<br>Iam Brenda Neumbe</h1><br><p>A girls'mentor </p><br>
-    <p>Welcome to my portfolio, please feel free to look around the website</p>
-    <img src="./pics/brenda.jpg">
-</div>
+    <img src="./pics/brenda.jpg" class="prof-pic">
+    <h1>Brenda Neumbe</h1><br><p>| A web Developer and girls' mentor |</p>
+    <div class="line-break"></div><br>
+    <div class="social-icons">
+    <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-github-square"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+</div></div>
 <div id="section2">
     <h1>What I do?</h1>Iam an entrepreneur and social worker currently working with <a href="#">Concern for the Girlchild </a>
     <h2>My coding projects</h2>
@@ -49,26 +54,49 @@
 <div id="section3">
     <h1>What I do with teenagers</h1>
     <p>Currently, Iam a computer teacher for intermediate learners. Consider me a mentor for the teenagers.</p>
-    <img src="pics/1.jpg">
-    <img src="pics/5.jpg">
-    <img src="pics/6.jpg">
-    <img src="pics/7.jpg">
-    <img src="pics/14.jpg">
-    <img src="pics/11.jpg">
-    <img src="pics/12.jpg">
-    <img src="pics/2.jpg">
+   <div class="gallery"> 
+    <div><img src="pics/1.jpg">
+    <p> BAskets Weaving</p></div>
+    <div><img src="pics/5.jpg">
+    <p> BAskets Weaving</p></div>
+    <div><img src="pics/6.jpg">
+    <p> BAskets Weaving</p></div>
+    <div><img src="pics/7.jpg">
+    <p> BAskets Weaving</p></div>
+    <div><img src="pics/14.jpg">
+    <p> BAskets Weaving</p></div>
+    <div><img src="pics/11.jpg">
+    <p> BAskets Weaving</p></div>
+    <div><img src="pics/12.jpg">
+    <p> BAskets Weaving</p></div>
+    <div><img src="pics/2.jpg">
+    <p> BAskets Weaving</p></div>
+</div>
+<HR>
     <p></p>
 </div>
 <div id="section4">
     <h1>Get in touch</h1>
     Can I help you please?<a href="https://mail.google.com/mail/u/0/#inbox">Email me</a>
-
-<footer>
-    <p><I>"Code is like a joke, when you have to explain it, it's bad" Cory House</I></p>
-        <a href="https//www.facebook.com"><img src="pics/fb.png"></a>
-        <a href="#"><img src="pics/git.png"></a>
-        <a href="#"><img src="pics/link.png"></a>
-        <a href="#"><img src="pics/twit.png"></a>
+<footer class="footer">
+        <div class="social-links">
+            <ul>
+        <li class="social-items"><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="social-items"><a href="#"><i class="fab fa-github-square"></i></a></li>
+        <li class="social-items"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li class="social-items"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="quick-links">
+        <ul>
+            <li class="quick-items"><a href="#">Home</a></li>
+            <li class="quick-items"><a href="#">Services</a></li>
+            <li class="quick-items"><a href="#">Contact Me</a></li>
+        </ul></div>
+        <!--<p><I>"Code is like a joke, when you have to explain it, it's bad" Cory House</I></p> !-->
+    <div class="outer-footer">
+        Copyright &copy; Neumbe AB. All rights reserved 
+    </div>
 </footer>
 </body>
 </html>
