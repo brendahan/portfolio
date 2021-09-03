@@ -12,15 +12,13 @@ body{
     padding:0;
     height:100%;
     color: #B5FFD9;
-    /* background-color:#B5FFD9 ; */
     font-family: Georgia;
-    background-image:url(pics/wallpp.jpg) ;
 }
 nav{
 height: 50px;
-background-color: #AE00FB;
+background-color: #F0D9FF;
 width:100%;
-position:relative;
+position:fixed;
 }
 
 nav ul{
@@ -43,26 +41,26 @@ nav ul li a{
     cursor: pointer;
     color:#B5FFD9;
     padding: 0 30px;
-    background-color: #170055;
+    background-color: #AE00FB;
     border-radius: 10px;
     padding: 5px;
     text-align: center;
 
 }
  nav ul li a:hover{
-    background-color: #AE00FB;
+    background-color: #170055;
     border-radius: 10px;
     margin: 5px 0;
 }
 #section1 {
     margin-top:100px;
     width: 450px;
-    height:450px;
+    height:500px;
     text-align: center;
     margin: auto;
-    background-color: #170055;
-    color:#B5FFD9;
-    padding: 10px;
+    background-color: #F0D9FF;
+    color:#170055;
+    padding: 50px;
     margin-top: 10px;
     margin-left:450px;
     border-radius: 20px;
@@ -88,83 +86,146 @@ nav ul li a{
 .line-break{
     width: 250px;
     margin:0 auto;
-    border-top: 1px solid #B5FFD9;
+    border-top: 1px solid #170055;
 }
 .social-icons{
-    background-color: #170055;
+    background-color:#F0D9FF;
     padding: 10px 40px;
     font-size:25px;
 }
 
 .social-icons a{
-    background-color: #170055;
-    color: #B5FFD9;
+    background-color:#F0D9FF;
+    color: #170055;
+}
+.social-icons a:hover{
+    color:#AE00FB;;
+}
+#about{
+    color:#170055;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.about-me{
+    margin-left: 5px;
+    background-color: #F0D9FF;
+    padding: 30px 30px 30px 30px;
+    margin-right: 150px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.about-me a{
+    color:#170055;
+    text-decoration: none;
+}
+.about-me a:hover{
+    color: #AE00FB;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.about-img{
+    display: flex;
+    flex-direction: column;
+    margin-top:10px;
+    margin-left: 150px;
+    border-radius: 10px;
+}
+.hire-btn{
+    background-color: #45a049;
+    padding:8px;
+    border-radius: 5px;
+    margin-top:10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #170055;
+    font-family: Georgia;
+}
+#section3 h1{
+    color: #170055;
+    /* padding-left: 500px; */
+    padding-bottom: 10px;
 }
 .gallery{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: space-around;
     justify-content:center;
-    width:80%;
+    width:100%;
+    padding: 0;
 }
 .gallery img:hover{
     border: 2px solid #170055;
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1.05);
+    border-bottom: 0;
+    border-radius: 5px;
 }
 .gallery img{
-    flex-basis: 20%;
-    padding-bottom: 8px;
-    max-height: 90%;
-    max-width:90%;
-    border-radius: 10px;
+    flex-basis: 50%;
+    padding-bottom: 4px;
+    max-height: 100%;
+    max-width:100%;
+    border-radius: 5px;
 }
 .gallery p{
-    font-size: 12px;
+    font-size: 18px;
+    color: #170055;
+    font-weight: bold;
 }
 .contact-form{
-    background-color: #170055;
+    background-color: #F0D9FF;
     width:500px;
-    height: 450px;
-    border-radius: 10px;
+    height: 480px;
+    border-radius: 10px #170017 solid;
     margin:auto;
     margin-bottom: 30px;
     margin-top: 20px;
+    color: #170055;
 }
 .contact-form h1{
 text-align: center;
 padding-top: 10px;
 }
 input[type=text], select, textarea {
-    width: 80%; /* Full width */
-    background-color: #B5FFD9;
-    padding: 8px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin: 20px 5px 16px 50px; /* Add a top margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 80%;
+    background-color:white;
+    padding: 8px; 
+    border: 1px solid #170055; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin: 20px 5px 16px 50px; 
+    resize: vertical;
+    font-size:16px;
+    font-family: Georgia;
+    color:#170055
   }
   
   input[type=submit] {
-    background-color:#B5FFD9;
-    padding: 12px 20px;
+    background-color:#170055;
+    padding: 8px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left:200px;
-    margin-bottom: 05px;
+    margin-left:50px;
+    margin-bottom: 02px;
+    font-size:16px;
+    font-family: Georgia;
+    color: #B5FFD9;
+    font-weight: bold;
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color:#AE00FB;
+    font-weight: bold;
   }
   
 .footer{
     height:100px;
     width: 100%;
-    background-color:#170055;
+    background-color:#F0D9FF;
 }
 .social-links{
    display:flex;
@@ -185,7 +246,10 @@ input[type=text], select, textarea {
 }
 .social-items a{
     padding: 10px 20px;
-    color:#B5FFD9;
+    color:#170055;
+}
+.social-items a:hover{
+    color: #AE00FB;
 }
 .quick-links{
     display: flex;
@@ -196,12 +260,15 @@ input[type=text], select, textarea {
 .quick-links ul{
     display:flex;
     }
-.quick-links a{
-    color:#B5FFD9;
+.quick-links ul a{
+    color:#170055;
+}
+.quick-links ul a:hover{
+    color:#AE00FB;
 }
 .quick-items{
     list-style: none;
-    color:#B5FFD9;
+    color:#170055;
     padding:10px;
     align-items: center;
     margin:auto;
@@ -216,13 +283,13 @@ input[type=text], select, textarea {
 .quick-items a:hover{
     text-decoration: none;
     padding: 0 15px;
-    color:#B5FFD9;
+    color:#AE00FB;;
 }
 .outer-footer{
-    padding:  10px 5px 0 0;
+    padding:  5px 5px 0 0;
     text-align: center;
     color: #B5FFD9;
-    background-color: #AE00FB;
+    background-color: #170055;
     width: 100%;
     height:30px;
     margin-top: 2px;
