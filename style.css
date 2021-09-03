@@ -14,12 +14,13 @@ body{
     color: #B5FFD9;
     /* background-color:#B5FFD9 ; */
     font-family: Georgia;
-    background-image:url(pics/wallp.jpg);
+    background-image:url(pics/wallpp.jpg) ;
 }
 nav{
-height: 60px;
+height: 50px;
 background-color: #AE00FB;
 width:100%;
+position:relative;
 }
 
 nav ul{
@@ -87,15 +88,17 @@ nav ul li a{
 .line-break{
     width: 250px;
     margin:0 auto;
-    border-top: 1px solid #170055;
+    border-top: 1px solid #B5FFD9;
 }
 .social-icons{
-    color: #B5FFD9;
-}
-#section2{
-}
-#section3{
     background-color: #170055;
+    padding: 10px 40px;
+    font-size:25px;
+}
+
+.social-icons a{
+    background-color: #170055;
+    color: #B5FFD9;
 }
 .gallery{
     display: flex;
@@ -103,7 +106,7 @@ nav ul li a{
     flex-wrap: wrap;
     align-content: space-between;
     justify-content:center;
-    /* width:100%; */
+    width:80%;
 }
 .gallery img:hover{
     border: 2px solid #170055;
@@ -120,8 +123,46 @@ nav ul li a{
 .gallery p{
     font-size: 12px;
 }
+.contact-form{
+    background-color: #170055;
+    width:500px;
+    height: 450px;
+    border-radius: 10px;
+    margin:auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.contact-form h1{
+text-align: center;
+padding-top: 10px;
+}
+input[type=text], select, textarea {
+    width: 80%; /* Full width */
+    background-color: #B5FFD9;
+    padding: 8px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin: 20px 5px 16px 50px; /* Add a top margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  input[type=submit] {
+    background-color:#B5FFD9;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left:200px;
+    margin-bottom: 05px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
 .footer{
-    height:90px;
+    height:100px;
     width: 100%;
     background-color:#170055;
 }
@@ -134,27 +175,27 @@ nav ul li a{
     width:300px;
     height:30px;
     margin:auto;
+    margin-bottom:20px;
 }
 .social-items{
     list-style: none;
     margin-top: 10px;
-    font-size: 35px;
+    font-size: 25px;
     
 }
 .social-items a{
     padding: 10px 20px;
-    font-size:20px;
     color:#B5FFD9;
 }
 .quick-links{
     display: flex;
     margin:auto;
-    margin-left: 450px;
+    margin-left: 400px;
+    
 }
 .quick-links ul{
     display:flex;
-    
-}
+    }
 .quick-links a{
     color:#B5FFD9;
 }
@@ -164,8 +205,7 @@ nav ul li a{
     padding:10px;
     align-items: center;
     margin:auto;
-    margin-left:50px;
-   
+    margin-left:50px;  
 }
 .quick-items a{
     text-decoration: none;
@@ -176,16 +216,15 @@ nav ul li a{
 .quick-items a:hover{
     text-decoration: none;
     padding: 0 15px;
-    font-size:14px;
     color:#B5FFD9;
 }
 .outer-footer{
-    padding:  0 10px 0 0;
+    padding:  10px 5px 0 0;
     text-align: center;
     color: #B5FFD9;
     background-color: #AE00FB;
     width: 100%;
-    height:20px;
+    height:30px;
     margin-top: 2px;
     font-size:14px;
 }
