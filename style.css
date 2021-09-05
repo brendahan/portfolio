@@ -3,18 +3,18 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-}
-html{
-    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
 }
 body{
-    margin:0;
-    padding:0;
     height:100%;
     color: #B5FFD9;
     font-family: Georgia;
 }
 nav{
+display:flex;
+justify-content: space-between;
+align-items: center;
 height: 50px;
 background-color: #F0D9FF;
 width:100%;
@@ -22,9 +22,13 @@ position:fixed;
 }
 
 nav ul{
+    display: flex;
+    justify-content: space-between;
     padding:0;
     list-style: none;
-    
+    margin-left: 70px;
+    width:90%;
+
 }
 nav ul li{
     float: left;
@@ -32,8 +36,10 @@ nav ul li{
     font-weight: bold;
     margin-top:20px;
     align-content: center;
-    margin-left: 200px;
+    margin-left: 150px;
     font-family: Georgia;
+    
+    
     
 }
 nav ul li a{
@@ -51,6 +57,16 @@ nav ul li a{
     background-color: #170055;
     border-radius: 10px;
     margin: 5px 0;
+}
+.burger{
+    display:none;
+}
+.burger div{
+    width:35px;
+    height:2px;
+    background-color:#AE00FB;
+    margin-right:10px;
+    margin: 10px;
 }
 #section1 {
     margin-top:100px;
@@ -295,13 +311,55 @@ input[type=text], select, textarea {
     margin-top: 2px;
     font-size:14px;
 }
-@media screen and (max-width: 600px){
+
+ @media screen and (max-width:1024px){
+      .nav-menu{
+          width:80%;
+      }
+  }
+ @media screen and (max-width:768px){
+     body{
+         overflow-x: hidden;
+     }
+      .nav-menu{
+          position:absolute;
+           right:0px; 
+          height:80vh;
+          top:8vh;
+          background-color:#F0D9FF ;
+          border-radius: 10px;
+          display:flex;
+          flex-direction: column;
+          align-items:left;
+          width: 60%;
+          padding: 2rem 0rem ;
+          transform: translateX(100%);
+          transition:transform 0.5s ease-in;
+          color: #B5FFD9; 
+      }
+      .nav-menu li{
+          opacity:0;
+      }
+      .burger{
+          display: block;
+          cursor:pointer;
+          margin-left: 25rem;
+      }
+   } 
+  .nav.active{
+      transform:translateX(0%)
+  }
+}
+/* /* gallery responsiveness starts here  */
+@media screen and (max-width: 768px)
+{
     .gallery{
         flex-direction: column;
     }
  .gallery img{
      width:95%;
  }
-}
+} 
+  
 
 
