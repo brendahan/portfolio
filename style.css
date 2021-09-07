@@ -20,7 +20,12 @@ background-color: #F0D9FF;
 width:100%;
 position:fixed;
 }
-
+.top-nav img{
+    width:2.5rem;
+    height:2.5rem;
+    margin-top: 0.5rem;
+    margin-left:3rem;
+}
 nav ul{
     display: flex;
     justify-content: space-between;
@@ -34,10 +39,11 @@ nav ul li{
     float: left;
     font-size: 16px;
     font-weight: bold;
-    margin-top:20px;
+    margin-top:10px;
     align-content: center;
     margin-left: 150px;
     font-family: Georgia;
+    margin-bottom:10px;
     
     
     
@@ -46,7 +52,6 @@ nav ul li a{
     text-decoration: none;
     cursor: pointer;
     color:#B5FFD9;
-    padding: 0 30px;
     background-color: #AE00FB;
     border-radius: 10px;
     padding: 5px;
@@ -69,7 +74,7 @@ nav ul li a{
     margin: 10px;
 }
 #section1 {
-    margin-top:100px;
+    margin-top:400px;
     width: 450px;
     height:500px;
     text-align: center;
@@ -77,7 +82,6 @@ nav ul li a{
     background-color: #F0D9FF;
     color:#170055;
     padding: 50px;
-    margin-top: 10px;
     margin-left:450px;
     border-radius: 20px;
     font-family: Georgia;
@@ -286,16 +290,15 @@ input[type=text], select, textarea {
     list-style: none;
     color:#170055;
     padding:10px;
-    align-items: center;
-    margin:auto;
-    margin-left:50px;  
+    text-align: center;
+     
 }
 .quick-items a{
     text-decoration: none;
     padding: 0 15px;
     font-size:14px;
     width:100%;
-}.
+}
 .quick-items a:hover{
     text-decoration: none;
     padding: 0 15px;
@@ -304,7 +307,7 @@ input[type=text], select, textarea {
 .outer-footer{
     padding:  5px 5px 0 0;
     text-align: center;
-    color: #B5FFD9;
+    color: #415c4d;
     background-color: #170055;
     width: 100%;
     height:30px;
@@ -316,10 +319,20 @@ input[type=text], select, textarea {
       .nav-menu{
           width:80%;
       }
+      body{
+          width:67%;
+          height:30%;
+      }
+      .top-nav img{
+        margin-left:5rem;
+        margin-bottom: 0.5rem;
+    }
   }
- @media screen and (max-width:600px){
-     body{
+ @media  screen and (max-width:600px){
+body{
          overflow-x: hidden;
+width:100%;
+height:100%;
      }
       .nav-menu{
           position:absolute;
@@ -336,19 +349,33 @@ input[type=text], select, textarea {
           transform: translateX(100%);
           transition:transform 0.5s ease-in;
           color: #B5FFD9; 
+        
       }
       .nav-menu li{
           opacity:0;
       }
+      .top-nav img{
+          margin-left:5rem;
+          margin-bottom: 0.5rem;
+      }
       .burger{
           display: block;
           cursor:pointer;
-          margin-left: 25rem;
+          margin-left:15rem;
+          margin-right: 15rem;
       }
    } 
   .nav.active{
       transform:translateX(0%)
   }
+  
+.quick-items{
+    margin-left:0.8rem;  
+    background-color: #45a049;
+    width:150px;
+    margin-left:0.5rem;
+}
+
 }
 /* /* gallery responsiveness starts here  */
 @media screen and (max-width: 768px)
@@ -359,7 +386,11 @@ input[type=text], select, textarea {
  .gallery img{
      width:95%;
  }
-} 
-  
+ .quick-items{
+    margin-left:0.8rem;  
+    background-color: #45a049;
+    width:40rem;
+}
 
+} 
 
