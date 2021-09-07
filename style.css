@@ -352,7 +352,13 @@ body{
   .nav.active{
       transform:translateX(0%)
   }
- 
+  /* about responsiveness starts here */
+  .container{
+   display:flex;
+   justify-content:;
+}
+
+ /* about me responsiveness stops here */
 .gallery{
     flex-direction: column;
     padding-left:1.5rem;
