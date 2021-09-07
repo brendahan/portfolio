@@ -64,17 +64,20 @@ nav ul li a{
 }
 .burger div{
     width:35px;
-    height:2px;
+    height:3px;
     background-color:#AE00FB;
     margin-right:10px;
-    margin: 10px;
+    margin: 8px;
+}
+.profile-card{
+    /* background-color: #170017; */
 }
 #section1 {
-    margin-top:400px;
+    /* padding-top:400px; */
     width: 450px;
     height:500px;
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
     background-color: #F0D9FF;
     color:#170055;
     padding: 50px;
@@ -351,6 +354,10 @@ body{
   .nav.active{
       transform:translateX(0%)
   }
+  #section1 {
+    margin-left:1rem;
+
+}
   /* about responsiveness starts here */
   .about{
       height: 100%;
