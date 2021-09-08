@@ -18,7 +18,8 @@ align-items: center;
 height: 50px;
 background-color: #F0D9FF;
 width:100%;
-position:fixed;
+/* position:fixed; */
+Margin-bottom: 20px;
 }
 .top-nav img{
     width:2.5rem;
@@ -69,15 +70,11 @@ nav ul li a{
     margin-right:10px;
     margin: 8px;
 }
-.profile-card{
-    /* background-color: #170017; */
-}
+
 #section1 {
-    /* padding-top:400px; */
     width: 450px;
     height:500px;
     text-align: center;
-    /* margin: auto; */
     background-color: #F0D9FF;
     color:#170055;
     padding: 50px;
@@ -166,7 +163,6 @@ nav ul li a{
 } 
 #section3 h1{
     color: #170055;
-    /* padding-left: 500px; */
     padding-bottom: 10px;
     padding-left:10px;
     }
@@ -356,6 +352,7 @@ body{
   }
   #section1 {
     margin-left:1rem;
+    /* width:100%; */
 
 }
   /* about responsiveness starts here */
@@ -379,23 +376,22 @@ body{
 .about-img{
 margin-right: auto;
 width:100%;
-height: 100%:
+height: 100%;
 }
 .about-arrow{
     display: none;
 }
 .about-me{
-    width:100%;
+    /* width:100%; */
+    margin-right: 0.5rem;
+    padding-right: 2rem;
 }
 .hire-btn{
     background-color: #B5FFD9;
-    margin-left:10rem;
-
+    margin-left:9rem;
 } 
 .hire-btn:hover{
     background-color: #45a049;
-    /* margin-left:10rem; */
-
 } 
  /* about me responsiveness stops here */
  #section3 h1{
@@ -410,26 +406,16 @@ height: 100%:
  
 }
  
-.quick-items{
-    width:8rem;
-    margin-left:0.5rem;
-    padding-left: 0.01rem;
-}
-.quick-links{
-margin-left:0.005rem;  
-width:5rem;
-padding-left:0rem;
-
-}
-.quick-links ul a{
-    color:#170055;
-    font-size: 1.05rem;
+#section4{
+    width:28rem;
 }
 .contact-form{
     background-color: #c793dd;
     margin-left:1rem;
     margin-right: 3rem;
     border-radius: 2rem;
+    padding-left: 0.0005;
+   width:100%;
 }
 .contact-form h1{
     color:#AE00FB
@@ -440,13 +426,37 @@ padding-left:0rem;
         border: 0.08rem solid #170055; 
         border-radius: 1rem; 
       }
-      
       input[type=submit] {
         border-radius: 1rem;
         cursor: pointer;
         margin-left:12rem;
-    
       }
+      
+.social-items a{
+    color:#B5FFD9;
+}
+.quick-items{
+    width:8rem;
+    margin-left:0.5rem;
+    padding-left: 0.01rem;
+}
+.quick-links{
+margin-left:0.005rem;  
+width:5rem;
+padding-left:0rem;
+}
+.quick-links ul a{
+    color:#B5FFD9;
+    /* font-size: 1.05rem; */
+}
+.footer{
+    background-color: #170055;
+    
+}
+.outer-footer{
+    background-color: #AE00FB;
+    color:#8ea79a
+}
  }
 
 @media  only screen and (min-width:600px){
